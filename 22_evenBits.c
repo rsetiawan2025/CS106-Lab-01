@@ -8,7 +8,7 @@
  */
 int evenBits(void)
 {
-    return 2;
+    return (0x5555<<16) | 0x5555;
 }
 
 int test_evenBits(void)

@@ -9,7 +9,8 @@
  */
 int isZero(int x)
 {
-    return 2;
+    return !x;
+    // !(x ^ 0) since (x^0) == x
 }
 
 int test_isZero(int x)

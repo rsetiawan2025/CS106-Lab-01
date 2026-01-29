@@ -10,7 +10,9 @@
  */
 int bitMatch(int x, int y)
 {
-    return 2;
+    int mask = x & y;
+    int mask2 = ~x & ~y;
+    return mask | mask2;
 }
 
 int test_bitMatch(int x, int y)
